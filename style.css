@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: linear-gradient(to bottom , #E14D2A,#FD841F,#3E6D9C,#0008C1)
+}
+.spandiv{
+    text-align: center;
+    margin: 30px;
+}
+span{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(225, 77, 42);
+    transform: translateY(15px);
+    animation: moving 6s linear infinite;
+}
+@keyframes moving {
+    25%{
+        text-shadow: 0px 0px 30px rgba(0, 18, 83,0.5);
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(15px);
+        text-shadow: 0px 0px 0px rgba(225, 77, 42,0.0);
+    }
+    75%{
+        transform: translateY(-15px);
+        text-shadow: 0px 0px 30px rgba(0, 18, 83, 1);
+    }
+    100%{
+        text-shadow: 0px 0px 0px rgba(225, 77, 42,0.0);
+        transform: translateY(15px);
+    }
+}
+.spandiv :nth-child(1){ animation-delay: 0s;}
+.spandiv :nth-child(2){ animation-delay: 0.5s;}
+.spandiv :nth-child(3){ animation-delay: 1s;}
+.spandiv :nth-child(4){ animation-delay: 1.5s;}
+.spandiv :nth-child(5){ animation-delay: 2s;}
+.spandiv :nth-child(6){ animation-delay: 2.5s;}
+.spandiv :nth-child(7){ animation-delay: 3s;}
+.spandiv :nth-child(8){ animation-delay: 3.5s;}
+.spandiv :nth-child(9){ animation-delay: 4s;}
+.spandiv :nth-child(10){ animation-delay: 4.5s;}
+.spandiv :nth-child(11){ animation-delay: 5s;}
+.spandiv :nth-child(12){ animation-delay: 5.5s;}
+.spandiv :nth-child(13){ animation-delay: 6s;}
+.spandiv :nth-child(14){ animation-delay: 6.5s;}
+
+h1{
+    text-align: center;
+
+}
+p{
+    font-size: 1.5em;
+}
+.code-box{
+    padding: 1em 2em;
+    background-color: #ffffff;
+    border-radius: 2em;
+    color: #E14D2A;
+    font-size: 1.3em;
+}
+.code-box1{
+    padding: 1em 2em;
+    background-color: #ffffff;
+    border-radius: 2em;
+    color: #001253;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width:600px) {
+    .code-box1, .code-box{
+        width: 100%;
+        font-size: 0.9em;
+        border-radius: 1em;
+        padding: 0.5em 1em;
+    }
+}
